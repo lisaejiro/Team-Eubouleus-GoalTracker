@@ -1,4 +1,10 @@
-
+body{
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #0B0A07;
+}
 /* created to give background image space*/
 .Main-body{
 background-image: url(https://res.cloudinary.com/onamusia/image/upload/v1569281466/arrow-2889040_1920_gthrpf.jpg) ;
@@ -11,6 +17,9 @@ box-shadow: inset 0 0 0 1000px rgba(0,0,0,.75);
 }
 
 /*Nav Bar Stuff*/
+.NavBar{
+  background-color: white;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -29,12 +38,14 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-radius: 5px;
   font-size: 18px;
 }
 
 li a:hover {
-  text-decoration: underline;
+  color: white;
+  background-color: #081136;
+  border: 0.5px solid white;
 }
 
 .firstline{
@@ -43,8 +54,6 @@ width: 627px;
 height: 133px;
 left: 130px;
 top: 131px;
-
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 font-style: normal;
 font-weight: bold;
 font-size: 48px;
@@ -58,7 +67,6 @@ width: 553px;
 height: 98px;
 left: 130px;
 top: 220px;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 36px;
 line-height: 44px; 
 color: rgba(255, 255, 255, 0.73);
@@ -70,18 +78,30 @@ width: 246px;
 height: 40px;
 left: 130px;
 top: 362px;
-
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 font-style: normal;
 font-weight: normal;
 font-size: 24px;
 line-height: 29px;
 padding: 5px;
 text-align: justify;
-
-border: 1px solid ,rgba(255, 255, 255, 0.73);
-outline: 5px solid rgba(255, 255, 255, 0.73);
-color: rgba(255, 255, 255, 0.73);
+}
+.sign-up-btn{
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  border: 0.5px solid rgb(18, 117, 199);
+  border-radius: 5px;
+  margin: 0 auto;
+  color: #E3D87E;
+  text-align: center;
+  font-size: 1.4rem;
+  box-shadow: 1px 3px black;
+  cursor: pointer;
+}
+.sign-up-btn:hover{
+  color: white;
+  background-color: #E3D87E;
+  border: 0.5px solid white;
 }
 
 i {
@@ -118,7 +138,7 @@ a{
 }
 .form h2{
   text-align:center;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 .form p{
   padding:10px;
@@ -126,4 +146,13 @@ a{
 }
 .form form{
   padding:10px;
+}
+.footer{
+  height: 30px;
+  text-align: center;
+  color: black;
+  margin-top: 0;
+  width: 100%;
+  top: 100;
+  background-color: white;
 }
