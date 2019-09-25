@@ -82,9 +82,10 @@ a:hover {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) and (min-width: 240px){
     .form-class {
         margin-top: 0px;
+        left:50px;
         /* position: absolute; */
         /* padding:30px;
         width: 658px;
