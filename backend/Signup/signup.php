@@ -1,3 +1,17 @@
+
+<?php
+require '../conn.php';
+
+
+$pass=$password="";
+$unam=$ema=$pass=$err= $_SESSION['sms']="";
+
+if(isset($_POST['register'])){
+    require("signup_user.php");
+    }
+
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -29,13 +43,13 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar" style="color:black;">
                   <ul class="navbar-nav nar" >
                     <li class="nav-item" >
-                      <a class="nav-link" href="../Homepage Files/index.html">Home</a>
+                      <a class="nav-link" href="../homepage/index.php">Home</a>
                     </li>
                     <li class="nav-item" style="color:black;">
-                            <a class="nav-link" href="../Signup/signup.html">Signup</a>
+                            <a class="nav-link" href="#">Signup</a>
                           </li>
                      <li class="nav-item" style="color:black;">
-                      <a class="nav-link" href="../Homepage Files/login.html">Login</a>
+                      <a class="nav-link" href="../homepage/login.php">Login</a>
                     </li>
 
                    
@@ -49,35 +63,45 @@
       <div class="col-md-6 mt-2">
         <div class="form-class">
           <p>Create account</p>
+          
+			   	 
+			<?php if(isset($_SESSION['sms'])){
+				echo $_SESSION['sms'];
+				}?>
+			 
 
-          <form action="/action_page.php" class="needs-validation" novalidate>
+          <form action="signup.php" method="POST"  >
               <div class="form-group">
                 <label for="uname">Full name:</label>
-                <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" >
+                <!-- <div class="valid-feedback">Valid.</div> -->
+                <span style="color:red; font-size:15px;"><?php echo $unam; ?></span>
+
+                <!-- <div class="invalid-feedback">Please fill out this field.</div> -->
               </div>
               <div class="form-group">
                       <label for="uname">Email:</label>
-                      <input type="email" class="form-control" id="uname" placeholder="Enter email" name="uname" required>
-                      <div class="valid-feedback">Valid.</div>
-                      <div class="invalid-feedback">Please fill out this field.</div>
+                      <input type="email" class="form-control" id="uname" placeholder="Enter email" name="email" >
+                      <!-- <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div> -->
+                      <span style="color:red; font-size:15px;"><?php echo $ema; ?></span>
+
                     </div>
               <div class="form-group">
                 <label for="pwd">Password:</label>
-                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
-                <div class="valid-feedback">Valid.</div>
-                <div class="invalid-feedback">Please fill out this field.</div>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                <span style="color:red; font-size:15px;"><?php echo $pass; ?></span>
+
               </div>
 
               <div class="form-group">
                       <label for="pwd">Confirm Password:</label>
-                      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
-                      <div class="valid-feedback">Valid.</div>
-                      <div class="invalid-feedback">Please fill out this field.</div>
+                      <input type="password" class="form-control" id="pwd" placeholder="Confirm password" name="pass">
+                      <span style="color:red; font-size:15px;"><?php echo $err; ?></span>
+
                     </div>
               
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" name="register" class="btn btn-primary">Submit</button>
             </form>
             
             <script>
@@ -100,7 +124,7 @@
               }, false);
             })();
             </script>
-            <p style="font-size:18px;">Already have an account? <a href="../Homepage Files/login.html">Login</a></p>
+            <p style="font-size:18px;">Already have an account? <a href="../Homepage Files/login.php">Login</a></p>
    
 
   </div>
@@ -123,3 +147,4 @@
 <script src="../Homepage Files/js/bootstrap.min.js"></script>
 </body>
 </html>
+<?php unset($_SESSION['sms'])?>
