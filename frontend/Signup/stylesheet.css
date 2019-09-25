@@ -10,19 +10,22 @@ body {
 box-shadow: inset 0 0 0 800px rgba(0,0,0,.75);
 }
 
-@media screen and (max-width: 1024px){
-    img.bg {
-    left: 50%;
-    margin-left: -512px; }
+@media screen and (max-width: 600px){
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #ffffff;
+        background-image: url(https://res.cloudinary.com/onamusia/image/upload/v1569281466/arrow-2889040_1920_gthrpf.jpg) ;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 705px;
+        background-size: cover;
+        width:100%;
+        
+    box-shadow: inset 0 0 0 800px rgba(0,0,0,.65);
+    }   
 }
 /*Nav bar styling*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  /* background-color: #FFFFFF; */
-}
+
 
 .nav-main {
     /* width: 100%; */
@@ -70,8 +73,8 @@ a:hover {
     margin-top: 0px;
     position: absolute;
     padding:30px;
-    width: 658px;
-    height: 515px;
+    /* width: 658px;
+    height: 515px; */
     left: 105px;
     /* bottom: 10px;     */
     background: rgba(255, 255, 255, 0.95);
@@ -79,6 +82,20 @@ a:hover {
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 600px){
+    .form-class {
+        margin-top: 0px;
+        /* position: absolute; */
+        /* padding:30px;
+        width: 658px;
+        height: 515px;
+        left: 105px; */
+        /* bottom: 10px;     */
+        /* background: rgba(255, 255, 255, 0.95);
+        border: 1px solid rgba(120, 68, 68, 0.79); */
+        box-sizing: border-box;
+    }
+}
 .form-class p {
  
 font-family:Arial, Helvetica, sans-serif;
@@ -89,6 +106,31 @@ line-height: 29px;
 
 color: #0F052D;
 }
+.nar{
+    margin-left:800px!important;
+}
+@media screen and (max-width: 600px){
+    .nar{
+        margin-left:0px!important;
+    }
+}
+
+.text{
+    color:white;
+    margin-top:225px;
+    font-family: cursive;
+
+font-weight: 300;
+font-size: 45px;
+line-height: 40px;
+}
+@media screen and (max-width: 600px){
+    .text{
+        display: none;
+    }
+}
+
+
 
 /* label#fname{
     position: absolute;
