@@ -1,11 +1,21 @@
+.dozie{
+  
+    background-color:rgba(104, 52, 52, 0.3);
+    height:623px;
+   
+    /* border:1px solid black; */
+
+}
 body{
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
     height: 100%;
-      background:url(Goal1.jpg) no-repeat;
-      /* padding-top:100px; */
+    background:url("Goal1.jpg") no-repeat;
+ 
       background-size:cover;
+     
+
 
   }
   /*Nav Bar Stuff*/

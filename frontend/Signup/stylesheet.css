@@ -69,17 +69,28 @@ a:hover {
 .form-class {
     margin-top: 0px;
     position: absolute;
-    padding: auto;
+    padding:30px;
     width: 658px;
     height: 515px;
     left: 105px;
-    bottom: 20px;    
+    /* bottom: 10px;     */
     background: rgba(255, 255, 255, 0.95);
     border: 1px solid rgba(120, 68, 68, 0.79);
     box-sizing: border-box;
 }
 
-label#fname{
+.form-class p {
+ 
+font-family:Arial, Helvetica, sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+
+color: #0F052D;
+}
+
+/* label#fname{
     position: absolute;
 width: 161px;
 height: 29px;
@@ -93,9 +104,9 @@ font-size: 16px;
 line-height: 20px;
 
 color: #000000;
-    }
+    } */
 
-    label#lname{
+    /* label#lname{
         position: absolute;
         width: 161px;
         height: 29px;
@@ -201,22 +212,7 @@ border-radius: 5px;
         }
 
 
-        p {
-            position: absolute;
-width: 658px;
-height: 515px;
-left: 105px;
-top: 40px;
-
-
-font-family:Arial, Helvetica, sans-serif;
-font-style: normal;
-font-weight: bold;
-font-size: 24px;
-line-height: 29px;
-
-color: #0F052D;
-        }
+       
        
 
         input.checkbox {
@@ -267,5 +263,5 @@ line-height: 20px;
 
 color: #FFFFFF;
 
-}
+} */
 
