@@ -18,7 +18,7 @@ box-shadow: inset 0 0 0 1000px rgba(0,0,0,.75);
 
 /*Nav Bar Stuff*/
 .nar{
-  margin-left:800px!important;
+  margin-left:600px!important;
 }
 @media screen and (max-width: 600px){
   .nar{
