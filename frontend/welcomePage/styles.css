@@ -18,6 +18,15 @@ body{
 
 
   }
+  .nar{
+    margin-left:800px!important;
+  }
+  @media screen and (max-width: 600px){
+    .nar{
+        margin-left:0px!important;
+    }
+  }
+  
   /*Nav Bar Stuff*/
 /* .NavBar{
     background-color: white;
