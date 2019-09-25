@@ -24,7 +24,7 @@ if(isset($_POST['register'])){
     <link rel="stylesheet" href="Fontawesome-all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">  
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="../Homepage Files/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../homepage/css/bootstrap.min.css">
  
 </head>
 
@@ -62,7 +62,7 @@ if(isset($_POST['register'])){
     <div class="row">
       <div class="col-md-6 mt-2">
         <div class="form-class">
-          <p>Create account</p>
+          <h2>Create account</h2>
           
 			   	 
 			<?php if(isset($_SESSION['sms'])){
@@ -101,7 +101,7 @@ if(isset($_POST['register'])){
 
                     </div>
               
-              <button type="submit" name="register" class="btn btn-primary">Submit</button>
+              <button type="submit" name="register" class="btn btn-primary">Sign up</button>
             </form>
             
             <script>
@@ -124,7 +124,8 @@ if(isset($_POST['register'])){
               }, false);
             })();
             </script>
-            <p style="font-size:18px;">Already have an account? <a href="../Homepage Files/login.php">Login</a></p>
+  
+            <p >Already have an account? <a href="../homepage/login.php">Login</a></p>
    
 
   </div>

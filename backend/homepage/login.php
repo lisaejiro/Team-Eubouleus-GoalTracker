@@ -49,7 +49,7 @@ if(isset($_POST['login'])){
   <div class="container">
   <div class="form">
     <h2>LOGIN</h2>
-    <p>fill in  your login details</p>
+    <p>Fill in  your login details</p>
 
     <span style="color:red; font-size:20px"><?php echo $err; ?></span>
 

@@ -170,6 +170,13 @@ a{
 .form p{
   padding:10px;
   font-family: cursive;
+  font-family:cursive;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 29px;
+
+color: #0F052D;
 }
 .form form{
   padding:10px;
