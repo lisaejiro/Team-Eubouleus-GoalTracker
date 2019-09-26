@@ -14,7 +14,7 @@ if(isset($_POST['login'])){
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Goal Tracker App</title>
-  <link rel="stylesheet" type="text/css" href="index-style.css">
+  <link rel="stylesheet" type="text/css" href="css/index-style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
@@ -34,10 +34,10 @@ if(isset($_POST['login'])){
               <a class="nav-link" href="index.php">Home</a>
             </li>
             <li class="nav-item" style="color:black;">
-                    <a class="nav-link" href="../Signup/signup.php">Signup</a>
+                    <a class="nav-link" href="signup.php">Signup</a>
                   </li>
              <li class="nav-item" style="color:black;">
-              <a class="nav-link" href="../homepage/login.php">Login</a>
+              <a class="nav-link" href="login.php">Login</a>
             </li>
 
            
@@ -72,7 +72,7 @@ if(isset($_POST['login'])){
         <button type="submit" class="btn btn-primary" name="login">Sign in</button>
       </form>
 
-     <p >Don't have an account yet? <a href="../Signup/signup.php"> Create one</a></p> 
+     <p >Don't have an account yet? <a href="signup.php"> Create one</a></p> 
 
 
   </div>

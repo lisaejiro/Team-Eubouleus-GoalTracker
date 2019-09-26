@@ -1,5 +1,5 @@
 <?php
-require("../conn.php");
+require("conn.php");
 $ema=$email='';
 $pass='';
 
@@ -43,7 +43,7 @@ if (empty($ema) && empty($pass)) {
                         $_SESSION['login']=true;
                         $_SESSION['user']=$row['name'];
                         $_SESSION['id'] =$row['id'];
-                    header("location:../welcomePage/welcome.php");
+                    header("location:home.php");
 
                  }else{
                     $err = 'Password does not match';

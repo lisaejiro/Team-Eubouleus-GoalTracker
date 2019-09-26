@@ -7,7 +7,7 @@
   <title>Goal Tracker App</title>
   <!--fonts and icons-->
   <link rel="icon" href="https://res.cloudinary.com/ddu0ww15f/image/upload/c_scale,w_16/v1569361565/icons8-target-100_e69oyy.png" type="img/x-icon">
-  <link rel="stylesheet" type="text/css" href="index-style.css">
+  <link rel="stylesheet" type="text/css" href="css/index-style.css">
   <link rel="stylesheet" href="Fontawesome-all.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -30,7 +30,7 @@
               <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item" style="color:black;">
-                    <a class="nav-link" href="../Signup/signup.php">Signup</a>
+                    <a class="nav-link" href="signup.php">Signup</a>
                   </li>
              <li class="nav-item" style="color:black;">
               <a class="nav-link" href="login.php">Login</a>

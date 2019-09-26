@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
         mysqli_query($conn, "insert into users set name='$uname', email='$email', password='$password'") or die(mysql_error($conn));
         
         $_SESSION['sms']= "<div class='alert alert-success'>
-        <strong>Success!</strong> Proceed to <a href='../Homepage Files/login.php'>Login</a>
+        <strong>Success!</strong> Proceed to <a href='login.php'>Login</a>
       </div>";
             
         $email=$password="";

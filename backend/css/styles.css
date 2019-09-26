@@ -1,4 +1,4 @@
-.dozie{
+.bud{
   
     background-color:rgba(104, 52, 52, 0.3);
     height:623px;
@@ -11,7 +11,7 @@ body{
     padding: 0;
     margin: 0;
     height: 100%;
-    background:url("Goal1.jpg") no-repeat;
+    background:url("../Goal1.jpg") no-repeat;
  
       background-size:cover;
      

@@ -1,6 +1,6 @@
 
 <?php
-require '../conn.php';
+require 'conn.php';
 
 
 $pass=$password="";
@@ -23,8 +23,8 @@ if(isset($_POST['register'])){
     <link rel="icon" href="https://res.cloudinary.com/ddu0ww15f/image/upload/c_scale,w_16/v1569361565/icons8-target-100_e69oyy.png" type="img/x-icon">
     <link rel="stylesheet" href="Fontawesome-all.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">  
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="../homepage/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
  
 </head>
 
@@ -43,13 +43,13 @@ if(isset($_POST['register'])){
                 <div class="collapse navbar-collapse" id="collapsibleNavbar" style="color:black;">
                   <ul class="navbar-nav nar" >
                     <li class="nav-item" >
-                      <a class="nav-link" href="../homepage/index.php">Home</a>
+                      <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item" style="color:black;">
                             <a class="nav-link" href="#">Signup</a>
                           </li>
                      <li class="nav-item" style="color:black;">
-                      <a class="nav-link" href="../homepage/login.php">Login</a>
+                      <a class="nav-link" href="login.php">Login</a>
                     </li>
 
                    
@@ -125,7 +125,7 @@ if(isset($_POST['register'])){
             })();
             </script>
   
-            <p >Already have an account? <a href="../homepage/login.php">Login</a></p>
+            <p >Already have an account? <a href="login.php">Login</a></p>
    
 
   </div>
@@ -143,9 +143,9 @@ if(isset($_POST['register'])){
             <p>&copy; 2019 | Team Eubouleus</p>
         </div>
     </footer> -->
-<script src="../Homepage Files/js/jquery-3.2.1.min.js"></script>
-<script src="../Homepage Files/js/popper.min.js"></script>
-<script src="../Homepage Files/js/bootstrap.min.js"></script>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
 <?php unset($_SESSION['sms'])?>

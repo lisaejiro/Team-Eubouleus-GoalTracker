@@ -8,11 +8,11 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Goal Tracker </title>
-    <link rel="stylesheet" href="../Homepage Files/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="dozie">
+  <div class="bud">
     <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top" style="color:black;">
         <!-- Brand -->
         <a class="navbar-brand" href="#">Eubouleus Goal Tracker</a>
@@ -49,8 +49,8 @@ session_start();
         </div>
 </div>
 
-    <script src="../Homepage Files/js/jquery-3.2.1.min.js"></script>
-    <script src="../Homepage Files/js/popper.min.js"></script>
-    <script src="../Homepage Files/js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
